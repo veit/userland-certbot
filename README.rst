@@ -28,21 +28,23 @@ deployed software and cronjobs in userland.
 Installation
 ============
 
-Clone this project from Github.
+Create a Python environment with a buildout module:
 
-$ git clone https://github.com/veit/userland-certbot.git
+    $ virtualenv venv
+    $ cd venv
+    $ bin/pip install zc.buildout
 
-Change into the projects directory.
+Clone this project from Github:
 
-$ cd userland-certbot
+    $ git clone https://github.com/veit/userland-certbot.git
 
-Install buildout
+Change into the projects directory:
 
-$ pip install zc.buildout
+    $ cd ../userland-certbot
 
-Buildout (actually install) the environment.
+Buildout (actually install) the environment:
 
-$ buildout
+    $ ../venv/bin/buildout
 
 
 Registration
