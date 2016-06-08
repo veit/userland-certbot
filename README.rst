@@ -63,9 +63,11 @@ To acquire a certificate from Let's Encrypt simply run::
     $ bin/certbot-runner certonly -d example.com -d www.example.com...
 
 Please ensure that your webserver serves content for
+
 - http://example.com/.well-known/acme-challenge
 - http://www.example.com/.well-known/acme-challenge
 - ...
+
 from <install-dir>/parts/certbot/web/.well-known/acme-challenge
 so that *acquisition requests* can be properly processed.
 
@@ -78,9 +80,11 @@ To renew all certificates due to renewal simply run::
     $ bin/certbot-runner renew [--force-renewal]
 
 Please ensure that your webserver serves content for
+
 - http://example.com/.well-known/acme-challenge
 - http://www.example.com/.well-known/acme-challenge
 - ...
+
 from parts/certbot/web/.well-known/acme-challenge
 so that *renewal requests* can be properly processed.
 
@@ -89,6 +93,7 @@ Fully Automated Renewal
 =======================
 
 Some notes related to automated renewal:
+
 - A cronjob for automated renewal is automatically installed.
 - Please check if it is working correctly.
 - After successful renewal an email will be sent to webmaster@example.com.
