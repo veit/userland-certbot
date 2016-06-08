@@ -1,22 +1,22 @@
 #!/bin/sh
 
-set -- ${RENEWED_DOMAINS}
-RENEWED_DOMAIN=${1}
+set -- $${RENEWED_DOMAINS}
+RENEWED_DOMAIN=$${1}
 
 (
   echo "Dear Sir or Madam,"
   echo
   echo "Certbot has recently renewed TLS certificates for the following domain(s):"
   echo
-  echo "    ${RENEWED_DOMAIN}"
+  echo "    $${RENEWED_DOMAIN}"
   echo
   echo "The new TLS certificate(s) are located at:"
   echo
-  echo "    ${RENEWED_LINEAGE}"
+  echo "    $${RENEWED_LINEAGE}"
   echo
   echo "Please update your webserver configuration. Thanks in advance."
   echo
   echo "Sincerely yours"
   echo
-  echo "Certbot on behalf of webmaster@${RENEWED_DOMAIN}"
-) |mail -s "TLS certificate(s) renewed for ${RENEWED_DOMAIN}" "webmaster@${RENEWED_DOMAIN}"
+  echo "Certbot on behalf of webmaster@$${RENEWED_DOMAIN}"
+) |mail -s "TLS certificate(s) renewed for $${RENEWED_DOMAIN}" "webmaster@$${RENEWED_DOMAIN}"
