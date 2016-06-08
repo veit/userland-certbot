@@ -1,0 +1,10 @@
+#!/bin/sh
+
+exec ${buildout:bin-directory}/certbot \
+        --rsa-key-size 4096 \
+        --config-dir=${buildout:parts-directory}/certbot/etc \
+        --work-dir=${buildout:parts-directory}/certbot/lib \
+        --logs-dir=${buildout:parts-directory}/certbot/log \
+        --webroot --webroot-path=${buildout:parts-directory}/certbot/web \
+        --non-interactive --text \
+        $${*}
