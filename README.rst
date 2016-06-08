@@ -31,8 +31,7 @@ Installation
 Create a Python environment with a buildout module::
 
     $ virtualenv venv
-    $ cd venv
-    $ bin/pip install zc.buildout
+    $ venv/bin/pip install zc.buildout
 
 Clone this project from Github::
 
@@ -40,7 +39,7 @@ Clone this project from Github::
 
 Change into the projects directory::
 
-    $ cd ../userland-certbot
+    $ cd userland-certbot
 
 Buildout (actually install) the environment::
 
@@ -51,9 +50,9 @@ Registration
 ============
 
 Before use you to have to register first. 
-This creates a Let's Encrypt account linked to your email address.
+This creates a Let's Encrypt account linked to your email address::
 
-$ bin/certbot-register
+    $ bin/certbot-register
 
 
 Getting Certificates
