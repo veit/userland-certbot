@@ -36,13 +36,13 @@ Change into the projects directory.
 
 $ cd userland-certbot
 
-Bootstrap (prepare) the environment.
+Install buildout
 
-$ python ./bootstrap.py
+$ pip install zc.buildout
 
 Buildout (actually install) the environment.
 
-$ bin/buildout
+$ buildout
 
 
 Registration
