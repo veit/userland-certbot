@@ -6,4 +6,5 @@ exec ${buildout:bin-directory}/certbot \
         --work-dir=${buildout:parts-directory}/certbot/lib \
         --logs-dir=${buildout:parts-directory}/certbot/log \
         --webroot --webroot-path=${buildout:parts-directory}/certbot/web \
+        --text \
         register
