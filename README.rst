@@ -97,3 +97,14 @@ Some notes related to automated renewal:
 - A cronjob for automated renewal is automatically installed.
 - Please check if it is working correctly.
 - After successful renewal an email will be sent to webmaster@example.com.
+
+
+General Notes
+=============
+
+Some general notes:
+
+- bin/certbot should *not* be invoked directly unless command line parameters are passed 
+  that point to certain (data) directories in userland. 
+  This can be easily achieved by invoking bin/certbot-runner instead
+  which forwards the call and passes all arguments to bin/certbot.
